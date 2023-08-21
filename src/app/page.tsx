@@ -20,14 +20,14 @@ const socials = [
 ];
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center justify-between lg:px-40">
       <div className="z-10 w-full items-center justify-between font-mono text-sm flex fixed">
-        <p className="flex justify-center  dark:bg-zinc-800/30 dark:from-inherit lg:static w-auto  lg:bg-gray-200 py-4  lg:dark:bg-zinc-800/30">
+        <p className="flex justify-center lg:pl-40 dark:bg-zinc-800/30 dark:from-inherit lg:static w-auto  lg:bg-gray-200 py-4  lg:dark:bg-zinc-800/30">
           @dev.chomba 🇿🇲
         </p>
         <div className="  items-end justify-center  from-white via-white dark:from-black dark:via-black static h-auto w-auto bg-none">
           <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0 lg:pr-40"
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -37,23 +37,68 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-40 w-full">
+      <div className="w-full pt-[100px] lg:pt-40">
         <h1 className="text-5xl">
           My name is <span className="font-bold">Chomba</span>, <br /> A
           software engineer. <br />
         </h1>
-        <p className="text-1xl mt-10">
-          Currently working with great minds and building viable solutions that
-          change the world at BongoHive and building a startup called Giglr.
-          Previously Head of Technology at Lendbox. Former software engineer at
-          Spark&Spur and kezo,
+        <p className="text-1xl mt-10 leading-[2]">
+          Currently working with great minds and building viable solutions that{" "}
+          <br />
+          change the world at{" "}
+          <a
+            href="https://bongohive.co.zm/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold underline"
+          >
+            BongoHive
+          </a>{" "}
+          and building a startup called{" "}
+          <a
+            href="https://www.giglr.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold underline"
+          >
+            Giglr
+          </a>{" "}
+          <br />
+          Previously Head of Technology at{" "}
+          <a
+            href="https://lendbox.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold underline"
+          >
+            Lendbox
+          </a>{" "}
+          .
+          <br />
+          Former software engineer at{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold underline"
+          >
+            Spark&Spur
+          </a>{" "}
+          . and{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold underline"
+          >
+            Kezo
+          </a>
+          ,
         </p>
-        <span className="font-bold text-xs">
+        {/* <span className="font-bold text-xs">
           Read more about me <a href="/about">here</a>.
-        </span>{" "}
+        </span>{" "} */}
       </div>
 
-      <div className="mb-0  flex gap-2 fixed bottom-0 w-full z-20">
+      <div className="mb-0  flex gap-2 fixed bottom-0 w-full z-20 lg:pl-40">
         {socials.map((social) => (
           <a
             href={social.url}
